@@ -7,7 +7,7 @@ const Product=({title,description,price,image})=>{
         <>
          <div>
             <div>
-                <img src={image} alt="heroImg" className="bg-center bg-cover object-cover" />
+                <img src={image} alt="heroImg" className="bg-center bg-cover object-cover" loading="lazy"/>
             </div>
             <div className="flex flex-col gap-2 p-4  bg-black">
                 <h2 className="text-xl">{title}</h2>
