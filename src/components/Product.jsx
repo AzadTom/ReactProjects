@@ -11,7 +11,7 @@ const Product=({title,description,price,image})=>{
             </div>
             <div className="flex flex-col gap-2 p-4  bg-black">
                 <h2 className="text-xl">{title}</h2>
-                <p className="text-sm font-thin">{description}</p>
+                <p className="text-sm font-thin">{description.substring(0,150)}</p>
                 <span>{`$${price}`}</span>
                 <button  className="px-4 py-2 bg-white text-black"    >Add to cart</button>
             </div>
