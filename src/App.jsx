@@ -1,4 +1,5 @@
 import React from "react";
+import Products from "./components/Products";
 
 
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
 
-     <h1>React-starter-code</h1>
+    <Products/>
    
     </>
   );
