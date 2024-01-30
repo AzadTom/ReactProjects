@@ -6,11 +6,16 @@ function Multiline() {
     const[searchTerm,setSearchTerm] = useState("");
     const [suggesstion,setSuggestion] = useState([]);
 
+    
+
     const [selectedUser,setSelectedUser] = useState([]);
 
     const [selectedUserSet,setSelectedUserSet] = useState(new Set());
 
     const [activeState,setActiveState] = useState(0);
+
+
+    const img  = "https://images.unsplash.com/photo-1672580661693-b9728a86ed35?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D"
 
 
     const inputRef = useRef(null);
@@ -29,6 +34,12 @@ function Multiline() {
         fetch(`https://dummyjson.com/users/search?q=${searchTerm}`)
         .then((res)=>(res.json())).then((data)=> setSuggestion(data))
         .catch((err)=> console.error(err));
+
+
+        
+
+
+        
 
 
         
@@ -172,7 +183,9 @@ function Multiline() {
                
             </div>
             
-          
+          <div>
+            <img src={img} alt="demo"  className='w-full h-full object-center bg-center bg-no-repeat'/>
+          </div>
         
     </div>
   )
