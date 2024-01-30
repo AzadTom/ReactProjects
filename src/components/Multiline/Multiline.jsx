@@ -183,9 +183,7 @@ function Multiline() {
                
             </div>
             
-          <div>
-            <img src={img} alt="demo"  className='w-full h-full object-center bg-center bg-no-repeat'/>
-          </div>
+         
         
     </div>
   )
