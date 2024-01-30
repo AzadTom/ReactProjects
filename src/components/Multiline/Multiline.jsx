@@ -186,7 +186,7 @@ const Pills  = ({text,img,onClick})=>{
 
     return(
         <>
-        <div onClick={onClick} className='bg-black p-2 text-white rounded-full flex gap-2 items-center'>
+        <div onClick={onClick} className='bg-black p-2 text-white  flex gap-2 items-center'>
             <img src={img} alt={text}  width={25}/>
             <span>{text}</span>
         </div>
